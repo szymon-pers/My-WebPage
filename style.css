@@ -1,0 +1,146 @@
+
+* {
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    
+}
+body {
+    background-color: #fffbf7;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    font-size: 2em;
+    color: #FA7252;
+}
+
+h2 {
+    color: #FA7252;
+}
+
+h1,h2,h3,p {
+    cursor: default;
+}
+
+section:nth-of-type(even){
+    background: #FA7252;
+    color: #404446;
+}
+nav, footer {
+    background-color: #273135;
+    color: #FA7252;
+}
+
+nav ul {
+    text-align: center;
+}
+
+.navItem {
+    display: inline-block;
+    list-style: none;
+    text-transform: uppercase;
+    margin: 0 25px;
+}
+
+.navItem > a {
+    padding: 20px;
+    display: block;
+    width: 150px;
+    
+}
+
+.navItem > a:hover {
+    background: #FA7252;
+    color: #273135 ;
+}
+
+.slider{
+    background: #404446;
+    min-height: 650px;
+    position: relative;
+}
+
+.heading-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+}
+
+.heading-box h2{
+    font-weight: 350;
+    border:#404446
+}
+
+.heading-box a {
+    font-size: 2em;
+    margin: 15px auto;
+    border: 1px solid #FA7252;
+    text-align: center;
+    display: block;
+    width: 750px;
+    padding: 5px 15px;
+}
+
+.heading-box a:hover {
+    border: 2px solid rgb(255, 38, 0);
+}
+
+.flex-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+
+    -webkit-align-items: center ;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.flex-item {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto; 
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+}
+
+nav, footer  {
+    background-color: #273135;
+    color: #FA7252;
+}
+
+.features {
+    padding: 25px 0;
+}
+
+.features .flex-item {
+    text-align: center;
+}
+
+.features p {
+    font-size: 0.75em;
+}
+
+.features i {
+    font-size: 2em;
+    margin-bottom: 16px;
+}
