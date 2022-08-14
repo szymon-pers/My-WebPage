@@ -40,7 +40,7 @@ section > h2,h3{
     margin-bottom: 25px;
 }
 
-section: :nth-of-type(2n+1){
+section:nth-of-type(2n+1){
     background: #404446;
     color: #FA7252;
 }
