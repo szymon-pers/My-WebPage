@@ -10,24 +10,40 @@ body {
     font-size: 16px;
 }
 
+.features-box {
+    padding: 25px 0;
+}
+
+
 a {
     text-decoration: none;
     color: inherit;
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 5em;
     color: #FA7252;
 }
 
 h2 {
     color: #FA7252;
+    color: inherit;
 }
 
 h1,h2,h3,p {
     cursor: default;
 }
 
+section > h2,h3{
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+section: :nth-of-type(2n+1){
+    background: #404446;
+    color: #FA7252;
+}
 section:nth-of-type(even){
     background: #FA7252;
     color: #404446;
@@ -53,6 +69,20 @@ nav ul {
     display: block;
     width: 150px;
 }
+.btn {
+    font-size: 2em;
+    margin: 15px auto;
+    border: 1px solid #FA7252;
+    text-align: center;
+    display: block;
+    width: 200px;
+    padding: 5px 15px;
+}
+
+.btn:hover {
+    border: 2px solid rgb(255, 38, 0);
+}
+
 
 .navItem > a:hover {
     background: #FA7252;
@@ -74,21 +104,7 @@ nav ul {
 
 .heading-box h2{
     font-weight: 350;
-    border:#404446
-}
-
-.heading-box a {
-    font-size: 2em;
-    margin: 15px auto;
-    border: 1px solid #FA7252;
-    text-align: center;
-    display: block;
-    width: 750px;
-    padding: 5px 15px;
-}
-
-.heading-box a:hover {
-    border: 2px solid rgb(255, 38, 0);
+    border:#FA7252;
 }
 
 .flex-container {
@@ -120,6 +136,7 @@ nav ul {
     -webkit-flex: 0 1 auto; 
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
+    height: 450;
 }
 
 nav, footer  {
@@ -133,6 +150,7 @@ nav, footer  {
 
 .features .flex-item {
     text-align: center;
+    width: 300px;
 }
 
 .features p {
@@ -140,6 +158,23 @@ nav, footer  {
 }
 
 .features i {
-    font-size: 2em;
+    font-size: 4em;
     margin-bottom: 16px;
+}
+
+.product .flex-item{
+    width: 50%;
+    padding: 25px;
+}
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product p {
+    margin-bottom: 16px;
+}
+
+.product .btn {
+    width: 215px;
 }
