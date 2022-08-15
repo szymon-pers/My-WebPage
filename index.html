@@ -60,7 +60,7 @@
         <section id="product" class="product">
             <h2>About Product</h2>
             <div class="flex-container">
-                <img srcset="./images/images.jpg" alt="Laptop"
+                <img srcset="./images/pobrane.jpg" alt="Laptop"
                 title="Awesome laptop-Macboook" />
             </div>
             <div class="flex-item">
@@ -77,8 +77,35 @@
                 </a>
             </div>
         </section>
-        <section id="gallery"></section>
-        <section id="contact"></section>
+        <section id="gallery" class="gallery">\
+            <h2>Gallery</h2>
+            <div class="container">
+                <div class="gallery-box">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact us</h2>
+            <div class="contact-box">
+                <form method="post">
+                    <label for="Name">Name</label>
+                    <input type="text" placeholder="Imię" id="Name" required 
+                    pattern="^[A-Z].*" maxlength="30" />
+                    <label for="Email">Email</label>
+                    <input type="email" placeholder="Email" id="Email"
+                    required />
+                    <label for="Message">Message</label>
+                    <textarea cols="30" rows="4" placeholder="Message text"
+                    id="Message"></textarea>
+                    <input type="submit" value="Send" class="btn" />
+                </form>
+            </div>
+        </section>
         <section>
             <h2>O mnie</h2>
             <p>
@@ -233,7 +260,23 @@
             </form>
         </section>
         <footer>
-
+            <div class="flex-container">
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/szymon.pers/about" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="https://twitter.com/MorawieckiM?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href="https://www.youtube.com/watch?v=P11WoLmVxTE" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
+                </ul>
+            </div>
+            <div class="copy flex-item">
+                <p>&copy; 2022 Szymek_Pers</p>
+            </div>
+            <div class="flex-item">
+                <ul class="sitemap">
+                    <li class=""><a href="https://www.google.com/search?q=blog&oq=blog&aqs=chrome..69i57j0i433i512j0i131i433i512l3j0i512j0i131i433i512j0i512j0i131i433i512j46i131i433i512.522j0j15&sourceid=chrome&ie=UTF-8" target="_blank" title="Blog">Blog</a></li>
+                    <li class=""><a href="https://justjoin.it/" target="_blank" title="Jobs">Jobs</a></li>
+                    <li class=""><a href="https://www.google.com/search?q=product&oq=product&aqs=chrome..69i57j0i433i512l2j0i512l2j69i60l3.1048j0j4&sourceid=chrome&ie=UTF-8" target="_blank" title="Gugul">Product <i class="fas fa-arrow-alt-circle-up"></i></a></li>
+                </ul>
+            </div>
         </footer>
         <!--can i use ogarniecie jakie przegladarki co ogarniaja-->
         <script src="" async defer></script>
