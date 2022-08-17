@@ -42,6 +42,8 @@
 <!--fontawesome.com-->
         <section id="features" class="features"> 
             <h2>Product features</h2>
+            <!--to co na dole przywołane z sricpt.js-->
+            <button onclick="changeFontColor();">Green Font</button>
             <div class="flex-container">
                 <div class="flex-item">
                     <i class="fa-regular fa-building"></i>
@@ -259,6 +261,15 @@
                 <input type="submit" value="Prześlij formularz" />
             </form>
         </section>
+        <section>
+            <button id="btn">Dodaj paragraf</button>
+           <!-- <button onclick="addParagraph()">Dodaj paragraf" </button>
+            onmouseover="addParagraph()">
+            button onclik jak sie kliknie a onmouseover jak najedziesz to sie wyswietli-->
+            <div id="text">
+
+            </div>        
+        </section>
         <footer>
             <div class="flex-container">
                 <ul class="social">
@@ -279,6 +290,9 @@
             </div>
         </footer>
         <!--can i use ogarniecie jakie przegladarki co ogarniaja-->
-        <script src="" async defer></script>
+        <!--Responsywność czyli dopasowanie do róznych wielkości ekranów-->
+        <!--cross browsing - zgodnosc z innymi przegladarkami , są narzedzia on-line -->
+        <script src="./script.js" async defer></script>
+        <!--script.js java srcipt mozna uzywac w head jak uzywaMY ZEWNETRZYCH BIBLIOTEK-->
     </body>
 </html>

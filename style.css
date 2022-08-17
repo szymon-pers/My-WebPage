@@ -280,3 +280,66 @@ footer .flex-container {
     text-shadow: 2px 3px 4px rgb(216, 64, 30);
     text-align: center;
 }
+
+@media(max-width: 480px){
+    body{
+        font-size: 14px; 
+    }
+    h1{
+        font-size: 2em;
+    }
+    section{
+        padding: 15px 0;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+    .slider {
+        min-height: 350px;
+    }
+    .features p {
+        font-size: 1em;
+        margin-bottom: 36px;
+    }
+    .features i {
+        font-size: 3em;
+        margin-bottom: 4px;
+    }
+    .product .flex-item {
+        width: 100%;
+    }
+    .product h3::before {
+        top: 50%;
+        left: 10%;
+    }
+    .product h3::after {
+        top: 50%;
+        right: 10%;
+    }
+    .gallery-box {
+        margin: 0;
+        grid-gap: 5px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .item:first-of-type,
+    .item:nth-of-type(5) {
+        grid-column: unset;
+        grid-row: unset;
+    }
+    .contact-box {
+        width: 75%;
+    }
+    footer .flex-item:nth-of-type(2){
+        order: 3;
+    }
+    .sitemap, .social {
+        margin-bottom: 16px;
+    }
+    .sitemap {
+        font-size: 1.5em;
+    }
+    .sitemap li {
+        margin-bottom: 16px;
+    }
+}
